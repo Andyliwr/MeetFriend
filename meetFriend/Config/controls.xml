@@ -1,0 +1,68 @@
+<control default-package="com.yonyou.uap.um.control">
+	<gallery class="UMGallery" />
+	<slidingdiv class="UmpSlidingLinearLayout" />
+	<slidingview class="UmpSlidingLayout" />
+	<range class="UMSeekBar" binder="UMSeekBarBinder" />
+	<picker class="UMWheelPicker" binder="UMWheelPickerBinder" />
+	<vdiv class="XVerticalLayout" />
+	<drawdiv class="DrawLayout" />
+	<imageflipper class="UMImageFlipper" binder="UMImageFlipperBinder" />
+	<hdiv class="XHorizontalLayout" />
+	<calendar class="UMHRCalendarView" binder="UMHRCalenderBinder" />
+	<flipper class="UMViewFlipper" />
+	<imagebutton class="UMImageButton" />
+	<table class="UMTable" binder="UMTableBinder" />
+	<view class="UMViewLayout" />
+	<window class="UMWindow" />
+	<popup class="UMPopupWindow" />
+	<dynamicdiv class="DynamicView" binder="DynamicViewBinder" />
+	<relativediv class="XRelativeLayout" />
+	<button class="UMButton" binder="UMTextBinder" />
+	<password class="UMPassword" binder="UMTextBinder" />
+	<label class="UMLabel" binder="UMTextBinder" />
+	<text class="UMTextbox" binder="UMTextBinder" />
+	<number class="UMNumberEdit" binder="UMTextBinder" />
+	<rang />
+	<naughty class="UMNaughty" />
+	<urlimage class="UMImage" binder="UMImageBinder" />
+	<email class="UMEmailEdit" binder="UMTextBinder" />
+	<datetime class="UMDateTimeEdit" binder="UMTextBinder" />
+	<time class="UMTimeEdit" binder="UMTextBinder" />
+	<date class="UMDateEdit" binder="UMTextBinder" />
+	<datepicker class="UMDatePicker" binder="UMDatePickerBinder" />
+	<timepicker class="UMTimePicker" binder="UMTimePickerBinder" />
+	<combobox class="UMComboBox" binder="UMComboBoxBinder" />
+	<select class="UMComboBox" binder="UMComboBoxBinder" />
+	<option class="UMOption" />
+	<file class="UMTextbox" binder="UMTextBinder" />
+	<radio class="UMRadioButton" binder="UMRadioButtonBinder" />
+	<radiobutton class="UMRadioButton" binder="UMRadioButtonBinder" />
+	<radiogroup class="UMRadioGroup" binder="UMRadioGroupBinder" />
+	<checkbox class="UMCheckbox" binder="UMCheckBoxBinder" />
+	<textarea class="UMTextArea" binder="UMTextBinder" />
+	<switch class="UMSwitch" binder="UMSwitchBinder" />
+	<image class="UMImage" binder="UMImageBinder" />
+	<togglebutton class="UMToggleButton" binder="UMToggleButtonBinder" />
+	<tooltipbar class="UMTooltipbar" binder="UMTooltipbarBinder" />
+	<progressbar class="UMProgressBar" binder="UMProgressBarBinder" />
+	<scrollview class="UMScrollView" />
+	<scroll class="UMScrollView" />
+	<togglebuttongroup class="UMToggleButtonGroup"
+		binder="UMToggleButtonGroupBinder" />
+	<tabBar class="UMToggleButtonGroup" binder="UMToggleButtonGroupBinder" />
+	<tabBarItem class="UMToggleButton" binder="UMToggleButtonBinder" />
+	<webview class="UMWebView" binder="UMWebViewBinder" />
+	<mapview class="UMMapView" binder="UMMapViewBinder" />
+	<twodcode class="UMTwoDCode" />
+	<camera class="UMCamera" />
+	<login class="UMLogin" />
+	<search class="UMSearchControl" binder="UMSearchControlBinder" />
+	<reference class="UMReferenceEdit" binder="UMReferenceEditBinder" />
+	<umchartview class="UMChartView" binder="UMChartViewBinder" />
+	<telephone class="UMTelephone" binder="UMTelephoneBinder" />
+	<tabcontrol class="UMTabControl" />
+	<tabpage class="UMTabPage" />
+	<password class="UMPassword" />
+	<phone class="UMPhoneEdit" />
+	<listview class="UMListViewBase" binder="UMListBinder" />
+</control>

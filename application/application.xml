@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="utf-8"?><application id="meetFriend" appname="meetFriend" versionCode="1" versionName="1" icon="app" jsengine="v2.0"><permission id="internet"></permission><components><component name="meetFriend" start="true"></component></components></application>

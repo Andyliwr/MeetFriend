@@ -1,0 +1,105 @@
+ #Yingdao {
+halign:center;
+height:fill;
+width:fill;
+layout:vbox;
+valign:TOP;
+}
+ #viewPage0 {
+halign:center;
+height:fill;
+background:#F7F8F8;
+layout:vbox;
+width:fill;
+valign:TOP;
+}
+ #flipperdefine0 {
+halign:center;
+height:fill;
+width:fill;
+layout:vbox;
+valign:TOP;
+}
+ #panel0 {
+halign:center;
+height:fill;
+layout:vbox;
+width:fill;
+valign:TOP;
+background-image:yingdao1.png;
+}
+ #panel4 {
+halign:LEFT;
+height:60.0;
+layout:hbox;
+width:fill;
+valign:center;
+}
+ #label0 {
+halign:center;
+height:20;
+weight:2;
+color:#000000;
+font-size:14;
+width:0;
+font-family:default;
+valign:center;
+}
+ #button0 {
+height:30;
+weight:1;
+border-radius:0;
+color:#000000;
+background:#ffffff;
+width:0;
+}
+ #panel1 {
+halign:center;
+height:fill;
+layout:vbox;
+width:fill;
+valign:TOP;
+background-image:yingdao2.png;
+}
+ #panel2 {
+halign:center;
+height:fill;
+layout:vbox;
+width:fill;
+valign:TOP;
+background-image:yingdao3.png;
+}
+ #panel3 {
+halign:center;
+height:fill;
+layout:vbox;
+width:fill;
+valign:TOP;
+}
+ #label1 {
+halign:center;
+height:0;
+weight:9;
+color:#000000;
+font-size:14;
+width:32.0;
+font-family:default;
+valign:center;
+}
+ #button1 {
+height:35;
+border-radius:3;
+color:#000000;
+background:#ffffff;
+width:120;
+}
+ #label2 {
+halign:center;
+height:0;
+weight:2;
+color:#000000;
+font-size:14;
+width:32.0;
+font-family:default;
+valign:center;
+}

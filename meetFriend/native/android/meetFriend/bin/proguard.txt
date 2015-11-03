@@ -1,0 +1,39 @@
+# view res/layout/um_alert_dialog.xml #generated:66
+-keep class com.android.internal.widget.DialogTitle { <init>(...); }
+
+# view AndroidManifest.xml #generated:82
+-keep class com.yonyou.meetfriend.LoginExtendActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:94
+-keep class com.yonyou.meetfriend.MainExtendActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:88
+-keep class com.yonyou.meetfriend.RegisterExtendActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:76
+-keep class com.yonyou.meetfriend.YingdaoExtendActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:67
+-keep class com.yonyou.uap.um.activity.ReportActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:48
+-keep class com.yonyou.uap.um.activity.WelcomeActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:109
+-keep class com.yonyou.uap.um.control.UMCameraActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:116
+-keep class com.yonyou.uap.um.control.UMMapActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:102
+-keep class com.yonyou.uap.um.control.UMTwoDCodeActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:42
+-keep class com.yonyou.uap.um.core.UAPMobileApplication { <init>(...); }
+
+# view AndroidManifest.xml #generated:72
+-keep class com.yonyou.uap.um.core.nativeweb.NWWindowActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:123
+-keep class com.yonyou.uap.um.runtime.ExtraMapActivity { <init>(...); }
+

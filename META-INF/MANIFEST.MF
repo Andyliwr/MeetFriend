@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: MeetFriend
+Bundle-SymbolicName: MeetFriend
+Bundle-Version: 1.0.5.qualifier
+Export-Package: meetFriend
+Bundle-RequiredExecutionEnvironment: JRE-1.1

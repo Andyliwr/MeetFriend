@@ -1,0 +1,198 @@
+ #Register {
+halign:center;
+height:fill;
+width:fill;
+layout:vbox;
+valign:TOP;
+}
+ #viewPage0 {
+halign:center;
+height:fill;
+width:fill;
+background:#F5F5F5;
+layout:vbox;
+valign:TOP;
+}
+ #panel0 {
+halign:center;
+height:fill;
+layout:vbox;
+background:#ffffff;
+width:fill;
+valign:TOP;
+}
+ #panel1 {
+halign:LEFT;
+height:50;
+background:#04abfb;
+layout:hbox;
+width:fill;
+valign:center;
+}
+ #button0 {
+height:44;
+widthWrap:56.0;
+color:#ffffff;
+width:wrap;
+margin-left:15;
+}
+ #image0 {
+height:80;
+width:80;
+margin-top:10;
+}
+ #panel2 {
+padding-right:15;
+halign:LEFT;
+height:40;
+layout:hbox;
+width:fill;
+margin-bottom:5;
+margin-top:20;
+valign:center;
+}
+ #label0 {
+halign:right;
+height:40;
+color:#000000;
+background:#ffffff;
+font-size:14;
+width:90;
+font-family:default;
+valign:center;
+}
+ #textbox0 {
+padding-left:4;
+halign:LEFT;
+height:40;
+color:#167ef8;
+font-size:17;
+background:#f2f4f0;
+width:fill;
+font-family:default;
+}
+ #panel3 {
+padding-right:15;
+halign:LEFT;
+height:40;
+layout:hbox;
+width:fill;
+margin-bottom:5;
+valign:center;
+}
+ #label1 {
+halign:right;
+height:40;
+color:#000000;
+background:#ffffff;
+font-size:14;
+width:90;
+font-family:default;
+valign:center;
+}
+ #textbox1 {
+padding-left:4;
+halign:LEFT;
+height:40;
+color:#167ef8;
+font-size:17;
+background:#f2f4f0;
+width:fill;
+font-family:default;
+}
+ #panel4 {
+padding-right:15;
+halign:LEFT;
+height:40;
+layout:hbox;
+width:fill;
+margin-bottom:5;
+valign:center;
+}
+ #label2 {
+halign:right;
+height:40;
+color:#000000;
+background:#ffffff;
+font-size:14;
+width:90;
+font-family:default;
+valign:center;
+}
+ #textbox3 {
+padding-left:4;
+halign:LEFT;
+height:40;
+color:#167ef8;
+font-size:17;
+background:#f2f4f0;
+width:fill;
+font-family:default;
+}
+ #panel5 {
+padding-right:15;
+halign:LEFT;
+height:40;
+layout:hbox;
+width:fill;
+margin-bottom:5;
+valign:center;
+}
+ #label3 {
+halign:right;
+height:40;
+color:#000000;
+background:#ffffff;
+font-size:14;
+width:90;
+font-family:default;
+valign:center;
+}
+ #textbox2 {
+padding-left:4;
+halign:LEFT;
+height:40;
+color:#167ef8;
+font-size:17;
+background:#f2f4f0;
+width:fill;
+font-family:default;
+}
+ #panel6 {
+padding-right:15;
+halign:LEFT;
+height:40;
+layout:hbox;
+width:fill;
+margin-bottom:10;
+valign:center;
+}
+ #label4 {
+halign:right;
+height:40;
+color:#000000;
+background:#ffffff;
+font-size:14;
+width:90;
+font-family:default;
+valign:center;
+}
+ #textbox4 {
+padding-left:4;
+halign:LEFT;
+height:40;
+color:#167ef8;
+font-size:17;
+background:#f2f4f0;
+width:fill;
+font-family:default;
+}
+ #button1 {
+height:40;
+border-radius:5;
+color:#000000;
+background:#04abfa;
+width:200;
+font-pressed-color:#400040;
+pressed-color:#c0c0c0;
+}

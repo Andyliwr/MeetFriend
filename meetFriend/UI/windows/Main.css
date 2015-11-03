@@ -1,0 +1,210 @@
+ #Main {
+halign:center;
+height:fill;
+width:fill;
+layout:vbox;
+valign:TOP;
+}
+ #viewPage0 {
+halign:center;
+height:fill;
+layout:vbox;
+background:#F5F5F5;
+width:fill;
+valign:TOP;
+}
+ #panel0 {
+halign:center;
+height:fill;
+layout:vbox;
+width:fill;
+valign:TOP;
+}
+ #slidingviewdefine0 {
+halign:center;
+height:fill;
+layout:vbox;
+width:fill;
+valign:TOP;
+}
+ #leftvspanel {
+halign:left;
+height:fill;
+layout:vbox;
+width:fill;
+valign:TOP;
+}
+ #panel7 {
+halign:left;
+height:fill;
+background:#8000ff;
+layout:vbox;
+width:fill;
+valign:TOP;
+}
+ #panel8 {
+border-bottom-width:2;
+halign:LEFT;
+height:80;
+layout:hbox;
+width:fill;
+valign:center;
+border-bottom-color:#bfffff;
+}
+ #imagebutton0 {
+width:60;
+icon-width:50;
+icon-height:50;
+height:60;
+font-size:10;
+margin-left:10;
+icon-background-image:manzu.png;
+icon-pressed-image:button_image_touch;
+icon-text-spacing:3;
+}
+ #button1 {
+height:44;
+widthWrap:36.0;
+color:#ffffff;
+width:wrap;
+margin-left:15;
+}
+ #label1 {
+halign:right;
+height:fill;
+color:#ffffff;
+font-size:20;
+width:fill;
+font-family:default;
+font-weight:bold;
+valign:center;
+}
+ #panel9 {
+border-bottom-width:2;
+halign:LEFT;
+height:25;
+layout:hbox;
+width:fill;
+valign:center;
+border-bottom-color:#bfffff;
+}
+ #image0 {
+height:18;
+width:18;
+margin-left:20;
+}
+ #label2 {
+halign:left;
+height:20;
+color:#ffffff;
+font-size:11;
+width:fill;
+margin-left:5;
+font-family:default;
+valign:center;
+}
+ #panel10 {
+halign:LEFT;
+height:40;
+layout:hbox;
+background:#8000ff;
+width:fill;
+margin-top:10;
+valign:center;
+}
+ #image1 {
+height:30;
+width:30;
+margin-left:20;
+}
+ #button2 {
+height:40;
+widthWrap:64.0;
+color:#ffffff;
+font-size:15;
+width:wrap;
+margin-left:5;
+}
+ #label3 {
+halign:right;
+height:fill;
+color:#ffffff;
+font-size:20;
+width:fill;
+font-family:default;
+valign:center;
+}
+ #panel11 {
+halign:LEFT;
+height:60.0;
+background:#8000ff;
+layout:hbox;
+width:120.0;
+valign:center;
+}
+ #mainsvpanel {
+halign:center;
+height:fill;
+layout:vbox;
+width:fill;
+valign:TOP;
+}
+ #panel4 {
+halign:center;
+height:fill;
+background:#ffffff;
+layout:vbox;
+width:fill;
+valign:TOP;
+}
+ #panel1 {
+halign:LEFT;
+height:50;
+layout:hbox;
+background:#04abfa;
+width:fill;
+valign:center;
+}
+ #button0 {
+height:25;
+width:29;
+margin-left:10;
+background-image:chouti.png;
+}
+ #label0 {
+halign:center;
+height:25;
+widthWrap:82.0;
+color:#000000;
+font-size:14;
+width:wrap;
+font-family:sans;
+valign:center;
+}
+ #textbox0 {
+padding-left:4;
+halign:LEFT;
+height:44;
+color:#167ef8;
+background:#ffffff;
+font-size:17;
+width:200;
+font-family:default;
+}
+ #textbox1 {
+padding-left:4;
+halign:LEFT;
+height:44;
+color:#167ef8;
+background:#ffffff;
+font-size:17;
+width:200;
+font-family:default;
+}
+ #sv_panel3 {
+halign:center;
+height:fill;
+layout:vbox;
+width:fill;
+valign:TOP;
+}

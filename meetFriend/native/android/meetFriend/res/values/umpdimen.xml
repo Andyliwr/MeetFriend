@@ -1,0 +1,24 @@
+<resources>
+
+    <dimen name="padding_small">8dp</dimen>
+    <dimen name="padding_medium">8dp</dimen>
+    <dimen name="padding_large">16dp</dimen>
+    <dimen name="title_bg_height">44dp</dimen>
+<!-- 订单与产品 -->
+	<dimen name="title_size">20dp</dimen>
+	<dimen name="date_picture_size">72dp</dimen>
+	<dimen name="date_picture_height">66dp</dimen>		
+    <dimen name="common_margin_width">8dp</dimen>
+    <dimen name="common_half_margin_width">4dp</dimen>
+    <dimen name="common_row_heihgt">44dp</dimen>
+    <dimen name="large_row_height">76dp</dimen>
+    <dimen name="common_padding_width">14dp</dimen>
+    <dimen name="right_btn_text">12dp</dimen>
+    <dimen name="common_text_size_small">13dp</dimen>
+    <dimen name="common_text_height_small">18dp</dimen>
+    <dimen name="common_text_size_mid">16dp</dimen>
+    <dimen name="common_text_height_mid">22dp</dimen>
+    <dimen name="common_text_size_large">18dp</dimen>
+    <dimen name="common_text_height_large">24dp</dimen>
+    <dimen name="common_group_title_height">20dp</dimen>
+</resources>

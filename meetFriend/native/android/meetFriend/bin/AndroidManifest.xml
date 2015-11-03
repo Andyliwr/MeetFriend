@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yonyou.meetfriend"
+    android:versionCode="1"
+    android:versionName="1" >
+   
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="17" />
+    
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    
+<!--
+    <supports-screens
+        android:anyDensity="false"
+        android:xlargeScreens="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />-->
+
+    <application
+    	android:name="com.yonyou.uap.um.core.UAPMobileApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/app"
+        android:label="@string/meetFriend"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.yonyou.uap.um.activity.WelcomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+            			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+
+            <intent-filter>
+                <action android:name="com.yonyou.uap.um.activity.WelcomeActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.yonyou.uap.um.activity.ReportActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.yonyou.uap.um.core.nativeweb.NWWindowActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+		<activity
+  android:name="com.yonyou.meetfriend.YingdaoExtendActivity"  
+ >
+<intent-filter> <action android:name="com.yonyou.meetfriend.Yingdao" />
+<category android:name="android.intent.category.DEFAULT" /></intent-filter>
+</activity>
+<activity
+  android:name="com.yonyou.meetfriend.LoginExtendActivity"  
+ >
+<intent-filter> <action android:name="com.yonyou.meetfriend.Login" />
+<category android:name="android.intent.category.DEFAULT" /></intent-filter>
+</activity>
+<activity
+  android:name="com.yonyou.meetfriend.RegisterExtendActivity"  
+ >
+<intent-filter> <action android:name="com.yonyou.meetfriend.Register" />
+<category android:name="android.intent.category.DEFAULT" /></intent-filter>
+</activity>
+<activity
+  android:name="com.yonyou.meetfriend.MainExtendActivity"  
+ >
+<intent-filter> <action android:name="com.yonyou.meetfriend.Main" />
+<category android:name="android.intent.category.DEFAULT" /></intent-filter>
+</activity>
+
+		
+		<activity
+            android:name="com.yonyou.uap.um.control.UMTwoDCodeActivity" >
+            <intent-filter>
+                <action android:name="com.yonyou.uap.um.control.UMTwoDCode" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.yonyou.uap.um.control.UMCameraActivity" >
+            <intent-filter>
+                <action android:name="com.yonyou.uap.um.control.UMCamera" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.yonyou.uap.um.control.UMMapActivity" >
+            <intent-filter>
+                <action android:name="com.yonyou.uap.um.control.UMMap" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.yonyou.uap.um.runtime.ExtraMapActivity" >
+        </activity>
+         
+        <!-- push setting
+		<activity 
+        	android:name="com.yonyou.pushclient.ShowNotification" 
+			android:label="@string/meetFriend">
+		</activity>
+        <service android:name="com.android.email.ACCOUNT_INTENT">
+        </service> 
+		<service android:name="com.yonyou.pushclient.NotificationPushService"> 
+			<intent-filter > 
+				<action android:name="com.yonyou.meetfriend.NOTIFICATION_PUSH_SERVICE"/> 
+			</intent-filter> 
+		</service> 
+		<service android:name="com.yonyou.uap.um.upush.UMAssistService"> 
+			<intent-filter > 
+				<action android:name="com.yonyou.uap.um.upush.PUSH_LISTENSERVICE"/> 
+			</intent-filter> 
+		</service> 
+		
+		
+		
+ 		push setting end -->
+ 		
+ 		
+ 		
+ 		<meta-data
+            android:name="uaplauncher"
+            android:value="com.yonyou.meetfriend.Yingdao" />
+        <meta-data
+            android:name="useuapwelcome"
+            android:value="true" />
+        <meta-data
+            android:name="autocheckupdate"
+            android:value="false" /> 
+            
+        <!-- application configure metadata -->
+		<meta-data android:name="weixin_key_ios" android:value="" />
+		<meta-data android:name="key.store.password" android:value="" />
+		<meta-data android:name="key.store" android:value="" />
+		<meta-data android:name="key.alias.password" android:value="" />
+		<meta-data android:name="push_server_msg" android:value="" />
+		<meta-data android:name="mapsdk" android:value="gaode" />
+		<meta-data android:name="com.amap.api.v2.apikey" android:value="" />
+		<meta-data android:name="push_server_mang" android:value="" />
+		<meta-data android:name="push_companypwd" android:value="" />
+		<meta-data android:name="key.alias" android:value="" />
+		<meta-data android:name="weixin_key_android" android:value="" />
+		<meta-data android:name="push_appid" android:value="" />
+		<meta-data android:name="push_companyid" android:value="" />
+		<meta-data android:name="mapkey" android:value="" />
+          
+    </application>
+
+</manifest>
