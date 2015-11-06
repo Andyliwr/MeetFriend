@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv=Content-Type content="text/html;charset=utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="renderer" content="webkit">
+    <meta name="full-screen" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="apple-touch-icon" href="logo.png"/>
+    <link rel="apple-touch-startup-image" href="logo.png"/>
+    <link rel="shortcut icon" href="logo.png"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>&nbsp;</title>
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <![if gte IE 9 | !IE ]>
+    <script src="js/libs/qrcode.min.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/libs/require.js"></script>
+    <script>
+        require(['http://cdn.mockplus.cn/js/run.208.496bd5b1e3c9f74c1cab18c00aef7377.js'], function () {
+            console.log('load cdn run.js success');
+        }, function (err) {
+            console.log('load local run.js');
+            require(['js/app.min.js'], function () {});
+        });
+    </script>
+    <![endif]>
+</head>
+<body>
+<!--[if lt IE 9]>
+<div class="can_not_help">
+    <p>抱歉，你的浏览器版本太低，请使用IE 9或更高版本的浏览器打开。</p>
+
+    <p>使用 Chrome, Firefox, Safari 可以获得更佳效果。</p>
+</div>
+<![endif]-->
+<script type="text/html" id="template-loader">
+    <div class="loading">
+        <div class="logo" style="background-image: url(<%= loadImg %>);"></div>
+        <div class="desc">
+            <div class="title">
+                <%= loadText %>
+            </div>
+            <!--<span class="progress">0%</span>-->
+        </div>
+    </div>
+</script>
+<script type="text/html" id="template-footer">
+    Powered by <a target="_blank" title="v2.2" href="https://www.mockplus.cn">mockplus.cn</a>
+</script>
+<script type="text/html" id="template-header">
+    <h2 class="title"><%= title %></h2>
+</script>
+<script type="text/html" id="template-menu">
+    <b class="close"></b>
+    <b class="split"></b>
+</script>
+<script type="text/html" id="template-screen">
+    <div id="effect"></div>
+</script>
+<script type="text/html" id="template-shell">
+    <svg width="100%" height="100%" >
+        <rect x="0" y = "0" rx="<%= x %>" ry="<%= y %>" width="100%" height="100%" style="fill:rgba(0,0,0,0);stroke:#ffffff;stroke-width:3;" />
+    </svg>
+</script>
+<script type="text/html" id="template-config">
+    <div class="fit-screen">
+        <input id="fit-to-screen" type="checkbox" <%= isFitToScreen %> />
+        <label for="fit-to-screen"><%= i18n.fitToScreen %></label>
+    </div>
+    <div class="show-comment-components">
+        <input id="show-comment-components" type="checkbox" checked/>
+        <label for="show-comment-components"><%= i18n.showComments %></label>
+    </div>
+    <% if(platform === 'phone' || platform === 'tablet') { %>
+    <div class="shells">
+        <select name="" class="shell" id="choose-shell">
+            <% if (platform === 'phone') { %>
+            <option value="iPhone"><%= i18n.iPhone %></option>
+            <option value="iPhone-wireframe"><%= i18n.iPhone_wireframe %></option>
+            <option value="Android"><%= i18n.Android %></option>
+            <option value="Android-wireframe"><%= i18n.Android_wireframe %></option>
+            <% } else {%>
+            <option value="iPad"><%= i18n.iPad %></option>
+            <option value="iPad-wireframe"><%= i18n.iPad_wireframe %></option>
+            <option value="tablet"><%= i18n.tablet %></option>
+            <option value="tablet-wireframe"><%= i18n.tablet_wireframe %></option>
+            <% } %>
+            <option value="no"><%= i18n.none %></option>
+        </select>
+    </div>
+    <% } %>
+    <% if(platform!=='web') { %>
+    <div class="background">
+        <span style="background-color:#707070;"></span>
+        <span style="background-color:#8DB77F;"></span>
+        <span style="background-color:#6A8F66;"></span>
+        <span style="background-color:#8F8766;"></span>
+        <span style="background-color:#4B97B4;"></span>
+        <span style="background-color:#667F8F;"></span>
+        <span style="background-color:#C4B47B;"></span>
+        <span style="background-color:#82668F;"></span>
+        <span style="background-color:#8F6666;"></span>
+        <span style="background-color:#FFFFFF;"></span>
+    </div>
+    <% } %>
+    <div>
+        <span class="help"><%= i18n.help_shortcut %></span>
+    </div>
+</script>
+<script type="text/html" id="template-share">
+    <div id="share-qrcode"></div>
+</script>
+<script type="text/html" id="template-tree">
+    <h3 class="title"><%= title %></h3>
+    <div class="tree-container">
+        <ul class="tree"></ul>
+    </div>
+</script>
+<script type="text/html" id="template-tree-item">
+    <li>
+        <b><em></em><%= title %></b>
+        <ul></ul>
+    </li>
+</script>
+<script type="text/html" id="template-panel">
+    <div class="panel-container">
+        <div id="control-panel" class="panel">
+            <div class="r-b cmd" data-cmd="home">
+                <div class="btn">
+                    <b class="home_ico"></b>
+                    <span><%= i18n.menu_home %></span>
+                </div>
+            </div>
+            <div class="r-b cmd" data-cmd="fullscreen">
+                <div class="btn fullscreen">
+                    <b class="full_ico"></b>
+                    <span><%= i18n.menu_full_screen %></span>
+                </div>
+            </div>
+            <div class="b cmd" data-cmd="menu">
+                <div class="btn">
+                    <b class="tree_ico"></b>
+                    <span><%= i18n.menu_list %></span>
+                </div>
+            </div>
+            <div class="r-b">
+            </div>
+            <div class="r-b cmd" data-cmd="refresh">
+                <div class="btn">
+                    <b class="refresh"></b>
+                    <span><%= i18n.menu_refresh %></span>
+                </div>
+            </div>
+            <div class="b cmd" data-cmd="playback">
+                <div class="btn">
+                    <b class="playback"></b>
+                    <span><%= i18n.menu_playback %></span>
+                </div>
+            </div>
+            <div class="r cmd" data-cmd="prev">
+                <div class="btn">
+                    <b class="prev"></b>
+                    <span><%= i18n.menu_previous %></span>
+                </div>
+            </div>
+            <div class="r cmd" data-cmd="hide">
+                <div class="btn">
+                    <b class="hide"></b>
+                    <span><%= i18n.menu_hide %></span>
+                </div>
+            </div>
+            <div class="cmd" data-cmd="next">
+                <div class="btn">
+                    <b class="next"></b>
+                    <span><%= i18n.menu_next %></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</script>
+<script type="text/html" id="template-ball">
+    <div class="rectangle">
+        <div class="ball-outside">
+            <div class="ball-middle">
+                <div class="ball-inside"></div>
+            </div>
+        </div>
+    </div>
+</script>
+<script type="text/html" id="template-message">
+    <p class="<%= className %>"><%= message %></p>
+</script>
+<script type="text/html" id="template-help-full-screen">
+    <div class="content">
+        <p><%= i18n.help_can_not_full_screen %></p>
+        <div class="browser browser-safari">
+            <h3><%= i18n.help_safari %></h3>
+            <div class="step">
+                <h4><%= i18n.help_safari_1 %></h4>
+                <img src="<%= i18n.help_img_safari_1 %>"/>
+            </div>
+            <div class="step">
+                <h4><%= i18n.help_safari_2 %></h4>
+                <img src="<%= i18n.help_img_safari_2 %>"/>
+            </div>
+            <div class="step">
+                <h4><%= i18n.help_safari_3 %></h4>
+            </div>
+        </div>
+        <% if(i18n.lang === 'zh-CN') { %>
+        <div class="browser browser-360">
+            <h3><%= i18n.help_360 %></h3>
+            <div class="step">
+                <h4><%= i18n.help_360_1 %></h4>
+                <img src="./assets/help/360_1.jpg"/>
+            </div>
+            <div class="step">
+                <h4>@<%= i18n.help_360_2 %></h4>
+                <img src="./assets/help/360_2.jpg"/>
+            </div>
+        </div>
+        <div class="browser browser-sogou">
+            <h3><%= i18n.help_sogou %></h3>
+            <div class="step">
+                <h4><%= i18n.help_sogou_1 %></h4>
+                <img src="./assets/help/sougou_1.jpg"/>
+            </div>
+            <div class="step">
+                <h4><%= i18n.help_sogou_2 %></h4>
+                <img src="./assets/help/sougou_2.jpg"/>
+            </div>
+        </div>
+        <div class="browser browser-baidu">
+            <h3><%= i18n.help_baidu %></h3>
+            <div class="step">
+                <h4><%= i18n.help_baidu_1 %></h4>
+                <img src="./assets/help/baidu_1.jpg"/>
+            </div>
+            <div class="step">
+                <h4><%= i18n.help_baidu_2 %></h4>
+                <img src="./assets/help/baidu_2.jpg"/>
+            </div>
+        </div>
+        <div class="browser browser-wechat">
+            <h3><%= i18n.help_wechat %></h3>
+            <div class="step">
+                <h4><%= i18n.help_wechat_1 %></h4>
+                <img src="./assets/help/wechat.jpg"/>
+            </div>
+        </div>
+        <div class="browser browser-unknown">
+            <h3><%= i18n.help_other_browsers %></h3>
+            <p><%= i18n.help_other_browsers_1 %></p>
+            <ul>
+                <li><%= i18n.help_other_browsers_advice_1 %></li>
+                <li><%= i18n.help_other_browsers_advice_2 %></li>
+                <li><%= i18n.help_other_browsers_advice_3 %></li>
+                <li><%= i18n.help_other_browsers_advice_4 %></li>
+            </ul>
+        </div>
+        <% } %>
+        <button class="close"><%= i18n.help_ok %></button>
+    </div>
+</script>
+<script type="text/html" id="template-help-shortcut">
+    <h3><%= i18n.shorct %></h3>
+    <ul>
+        <li><span>&#8593;</span> <%= i18n.shortcut_up %></li>
+        <li><span>&#8595;</span> <%= i18n.shortcut_down %></li>
+        <li><span>&#8592;</span> <%= i18n.shortcut_previous %></li>
+        <li><span>&#8594;</span> <%= i18n.shortcut_next %></li>
+        <li><span>&#8629;</span> <%= i18n.shortcut_playback %></li>
+    </ul>
+    <b class="close"></b>
+</script>
+</body>
+</html>
+<!-- build time: Fri Aug 28 15:20:21 CST 2015-->
